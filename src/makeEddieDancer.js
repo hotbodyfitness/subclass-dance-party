@@ -1,6 +1,6 @@
 var makeEddieDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node.addClass("eddieDancer");
+  this.$node.addClass('eddieDancer');
 };
 
 makeEddieDancer.prototype = Object.create(makeDancer.prototype);

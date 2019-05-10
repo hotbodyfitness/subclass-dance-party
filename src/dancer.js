@@ -9,6 +9,7 @@ convert setPosition to a prototype method
 var makeDancer = function(top, left, timeBetweenSteps) {
   // this.dancer = {};
   this.$node = $('<span class="dancer"></span>');
+  this.$node.removeClass('dancer');
   // this.top = top;
   // this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;

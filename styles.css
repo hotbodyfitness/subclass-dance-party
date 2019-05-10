@@ -21,11 +21,27 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
+/* .dancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+} */
+.charlieBrown{
+  display: flex;
+  justify-content: center;
+  /* border:10px solid purple;
+  border-radius:10px; */
+  height: 200px;
+  background-image: url('images/charliebrownDancer.gif');
+  position: absolute;
 }
-.newDancers{
+
+.eddieDancer{
+  display: flex;
+  justify-content: center;
+  /* border:10px solid blue;
+  border-radius:10px; */
+  height: 200px;
+  background-image: url("images/eddieDancer.gif");
   position: absolute;
 }
