@@ -40,10 +40,14 @@ makeDancer.prototype.setPosition = function(top, left) {
 };
 
 makeDancer.prototype.lineUp = function() {
-  this.$node.animate({
-    left: '100px',
-    height: 'toggle'
-  }, 1000);
+  // this.$node.animate({
+  //   left: '100px',
+  //   height: 'toggle'
+  // }, 1000);
+  var styleSettings = {
+    left: 0
+  };
+  this.$node.css(styleSettings);
 };
 
 // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
