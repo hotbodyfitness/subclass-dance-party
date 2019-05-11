@@ -6,7 +6,8 @@ var makeCharlieBrownDancer = function(top, left, timeBetweenSteps) {
 makeCharlieBrownDancer.prototype = Object.create(makeDancer.prototype);
 makeCharlieBrownDancer.prototype.constructor = makeCharlieBrownDancer;
 
-// makeCharlieBrownDancer.prototype.step = function() {
-//   makeDancer.prototype.step.call(this);
-//   this.$node.toggle();
-// };
+makeCharlieBrownDancer.prototype.step = function() {
+  // makeDancer.prototype.step.call(this);
+  this.$node.fadeIn();
+  this.$node.toggle();
+};

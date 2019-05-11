@@ -41,7 +41,7 @@ makeDancer.prototype.setPosition = function(top, left) {
 
 makeDancer.prototype.lineUp = function() {
   this.$node.animate({
-    right: '100px',
+    left: '100px',
     height: 'toggle'
   }, 1000);
 };

@@ -1,31 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+Bhai);
+
 body, html{
   height:100%;
 }
 body{
   margin: 0px;
-  background: black url('images/spaceDanceFloor.gif') center no-repeat;
-  background-size: 100% auto;
+  background: black url('images/dancefloor1.gif') center no-repeat;
+  background-size: 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+/* .title, .addDancerButton {
   padding:5px 12px;
   float:right;
-}
+} */
 .topbar{
   height:32px;
   background-color: #555;
 }
-.title{
-  background-color: #777;
-}
+
 .dancer{
   /* border:10px solid red;
   border-radius:10px; */
   position:absolute;
 }
+
+.lineUp, .moveLeft, .moveRight, .addDancerButton{
+  display: flex;
+  flex-direction: row;
+  float: right;
+  color: white;
+  font-size: 15px;
+  /* position:absolute;
+  top:25px; */
+  font-family: Verdana, sans-serif;
+  background-color: rgb(69, 69, 69);
+  text-decoration-color: rgb(69, 69, 69);
+  padding:5px 12px;
+  border: 1px solid silver;
+}
+
+.addEddieButton{
+  float: left;
+}
+
+.addCharlieButton{
+  float: left;
+}
+
+/* .lineUp {
+  right:25px;
+} */
+/*
+.topbar{
+  position: relative;
+} */
+
+.title{ /* all new */
+  background-color: rgb(98, 98, 98);
+  font-family: 'Baloo Bhai', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding:10px;
+  display:block;
+  margin:auto;
+}
+
 .cbd{
   display: flex;
   justify-content: center;
@@ -33,6 +75,10 @@ body, a:link, a:visited, a:active{
   /* width: ; */
   /* background-image: url("images/cbd.gif"); */
   position: absolute;
+}
+.cbd:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .eddie{
@@ -44,13 +90,7 @@ body, a:link, a:visited, a:active{
   position: absolute;
 }
 
-.lineUp {
-  /* border: 3px groove grey; */
+/* .lineUp, .moveLeft {
   padding:5px 12px;
   float: left;
-}
-.rotate {
-  border: 3px groove grey;
-  padding:5px 12px;
-  float: left;
-}
+} */
