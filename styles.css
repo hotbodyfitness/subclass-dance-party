@@ -76,10 +76,10 @@ body, a:link, a:visited, a:active{
   /* background-image: url("images/cbd.gif"); */
   position: absolute;
 }
-.cbd:hover {
+/* .dancer:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-}
+} */
 
 .eddie{
   display: flex;
@@ -88,6 +88,12 @@ body, a:link, a:visited, a:active{
   /* width: auto; */
   /* background-image: url("images/eddie.gif"); */
   position: absolute;
+}
+
+.music {
+  opacity: 0.5;
+  padding: 10px;
+  margin-left: 350px;
 }
 
 /* .lineUp, .moveLeft {

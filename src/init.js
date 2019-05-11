@@ -51,9 +51,24 @@ $(document).ready(function() {
     $('.dancer').animate({ 'left': '-=50px' }, 'fast' );
   });
 
-  // $('.dancer').mouseover(function() {
-  //   $('.eddie').append('<span class="eddie"></span>');
-  // })
+  //works but not on the dancers, maybe beacuse its an image/gif?
+  // $('.addDancerButton').click(function() {
+  //   $('.addDancerButton').toggle('explode');
+  // });
 
+  // var mouse = document.getElementsByClassName('dancer');
+  // mouse.addEventListener('mouseover', (event) => {
+  //   event.target.style.color = 'orange';
+  // });
+  $('.addDancerButton').mouseover(function() {
+    $('.addDancerButton').css('color', 'green');
+  });
+  $('.addDancerButton').mouseout(function() {
+    $('.addDancerButton').css('color', 'blue');
+  });
+  $('.eddie').mouseover(function() {
+    $('.eddie').html('<span class="eddie"> <img src="images/eddie.gif"></span>');
+  });
+  // this.$node;
 });
 
