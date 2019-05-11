@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background: black url('images/danceFloor.jpg') center no-repeat;
+  background: black url('images/spaceDanceFloor.gif') center no-repeat;
   background-size: 100% auto;
   font-size: 18px;
 }
@@ -26,22 +26,31 @@ body, a:link, a:visited, a:active{
   border-radius:10px; */
   position:absolute;
 }
-.charlieBrown{
+.cbd{
   display: flex;
   justify-content: center;
-  /* border:10px solid purple;
-  border-radius:10px; */
-  height: 200px;
-  background-image: url('images/cbd.gif');
+  height: 300px;
+  /* width: ; */
+  /* background-image: url("images/cbd.gif"); */
   position: absolute;
 }
 
-.eddieDancer{
+.eddie{
   display: flex;
   justify-content: center;
-  /* border:10px solid blue;
-  border-radius:10px; */
-  height: 200px;
-  background-image: url("images/eddie.gif");
+  height: 300px;
+  /* width: auto; */
+  /* background-image: url("images/eddie.gif"); */
   position: absolute;
+}
+
+.lineUp {
+  /* border: 3px groove grey; */
+  padding:5px 12px;
+  float: left;
+}
+.rotate {
+  border: 3px groove grey;
+  padding:5px 12px;
+  float: left;
 }

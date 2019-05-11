@@ -30,6 +30,19 @@ $(document).ready(function() {
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
+  $('.lineUp').on('click', function(event) {
+    for (let i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].lineUp();
+    }
+  });
+
+  // $('.lineUp').on('click', function(event) {
+
+  // }
+
+  // $('.dancer').on('click', event => {
+  //   $(this).rotate(180);
+  // });
 
 });
 

@@ -9,9 +9,9 @@ convert setPosition to a prototype method
 var makeDancer = function(top, left, timeBetweenSteps) {
   // this.dancer = {};
   this.$node = $('<span class="dancer"></span>');
-  this.$node.removeClass('dancer');
-  // this.top = top;
-  // this.left = left;
+  // this.$node.removeClass('dancer');
+  this.top = top;
+  this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
 
   this.step();
@@ -37,6 +37,13 @@ makeDancer.prototype.setPosition = function(top, left) {
     left: left
   };
   this.$node.css(styleSettings);
+};
+
+makeDancer.prototype.lineUp = function() {
+  this.$node.animate({
+    right: '100px',
+    height: 'toggle'
+  }, 1000);
 };
 
 // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
