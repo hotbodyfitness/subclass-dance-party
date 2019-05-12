@@ -89,6 +89,11 @@ body, a:link, a:visited, a:active{
   /* background-image: url("images/eddie.gif"); */
   position: absolute;
 }
+.eddie:hover, .cbd:hover {
+  background-color: aliceblue;
+  /* background-color: rgba(255, 251, 147, .3); */
+  border-radius: 50%;
+ }
 
 .music {
   opacity: 0.5;
