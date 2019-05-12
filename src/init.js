@@ -69,6 +69,12 @@ $(document).ready(function() {
   $('.eddie').mouseover(function() {
     $('.eddie').html('<span class="eddie"> <img src="images/eddie.gif"></span>');
   });
+
+  $('.interact').on('click', function(event) {
+    for (let i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].interact();
+    }
+  });
   // this.$node;
 });
 

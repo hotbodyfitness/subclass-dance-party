@@ -27,7 +27,7 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.lineUp, .moveLeft, .moveRight, .addDancerButton{
+.lineUp, .moveLeft, .moveRight, .addDancerButton, .interact {
   display: flex;
   flex-direction: row;
   float: right;
