@@ -53,17 +53,12 @@ describe('charlieBrownDancer', function() {
     expect(charlieBrownDancer.$node.toggle.called).to.be.true;
   });
 
-  describe('dance', function() {
-    it('should call step at least once per second', function() {
-      sinon.spy(charlieBrownDancer, 'step');
-      expect(charlieBrownDancer.step.callCount).to.be.equal(0);
-      clock.tick(timeBetweenSteps); // ? it seems an extra tick is necessary...
-      clock.tick(timeBetweenSteps);
-
-      expect(charlieBrownDancer.step.callCount).to.be.equal(1);
-
-      clock.tick(timeBetweenSteps);
-      expect(charlieBrownDancer.step.callCount).to.be.equal(2);
+  describe('properties', function() {
+    it('should have an interact function', function() {
+      expect(charlieBrownDancer.interact).to.be.a("function");
+    });
+    it('should have a lineUp function', function() {
+      expect(charlieBrownDancer.lineUp).to.be.a("function");
     });
   });
 });
@@ -88,17 +83,12 @@ describe('eddieDancer', function() {
     expect(eddieDancer.$node.toggle.called).to.be.true;
   });
 
-  describe('dance', function() {
-    it('should call step at least once per second', function() {
-      sinon.spy(eddieDancer, 'step');
-      expect(eddieDancer.step.callCount).to.be.equal(0);
-      clock.tick(timeBetweenSteps); // ? it seems an extra tick is necessary...
-      clock.tick(timeBetweenSteps);
-
-      expect(eddieDancer.step.callCount).to.be.equal(1);
-
-      clock.tick(timeBetweenSteps);
-      expect(eddieDancer.step.callCount).to.be.equal(2);
+  describe('properties', function() {
+    it('should have an interact function', function() {
+      expect(eddieDancer.interact).to.be.a("function");
+    });
+    it('should have a lineUp function', function() {
+      expect(eddieDancer.lineUp).to.be.a("function");
     });
   });
 });
