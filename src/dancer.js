@@ -7,9 +7,7 @@ convert setPosition to a prototype method
 */
 
 var makeDancer = function(top, left, timeBetweenSteps) {
-  // this.dancer = {};
   this.$node = $('<span class="dancer"></span>');
-  // this.$node.removeClass('dancer');
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
@@ -40,10 +38,6 @@ makeDancer.prototype.setPosition = function(top, left) {
 };
 
 makeDancer.prototype.lineUp = function() {
-  // this.$node.animate({
-  //   left: '100px',
-  //   height: 'toggle'
-  // }, 1000);
   var styleSettings = {
     left: 0
   };

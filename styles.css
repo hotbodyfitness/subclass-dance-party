@@ -12,18 +12,13 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-/* .title, .addDancerButton {
-  padding:5px 12px;
-  float:right;
-} */
+
 .topbar{
   height:32px;
   background-color: #555;
 }
 
 .dancer{
-  /* border:10px solid red;
-  border-radius:10px; */
   position:absolute;
 }
 
@@ -33,8 +28,6 @@ body, a:link, a:visited, a:active{
   float: right;
   color: white;
   font-size: 15px;
-  /* position:absolute;
-  top:25px; */
   font-family: Verdana, sans-serif;
   background-color: rgb(69, 69, 69);
   text-decoration-color: rgb(69, 69, 69);
@@ -50,15 +43,7 @@ body, a:link, a:visited, a:active{
   float: left;
 }
 
-/* .lineUp {
-  right:25px;
-} */
-/*
-.topbar{
-  position: relative;
-} */
-
-.title{ /* all new */
+.title{
   background-color: rgb(98, 98, 98);
   font-family: 'Baloo Bhai', sans-serif;
   font-size: 25px;
@@ -72,21 +57,13 @@ body, a:link, a:visited, a:active{
   display: flex;
   justify-content: center;
   height: 300px;
-  /* width: ; */
-  /* background-image: url("images/cbd.gif"); */
   position: absolute;
 }
-/* .dancer:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-} */
 
 .eddie{
   display: flex;
   justify-content: center;
   height: 300px;
-  /* width: auto; */
-  /* background-image: url("images/eddie.gif"); */
   position: absolute;
 }
 .eddie:hover, .cbd:hover {
@@ -100,8 +77,3 @@ body, a:link, a:visited, a:active{
   padding: 10px;
   margin-left: 350px;
 }
-
-/* .lineUp, .moveLeft {
-  padding:5px 12px;
-  float: left;
-} */
